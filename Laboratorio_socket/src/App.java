@@ -1,5 +1,14 @@
-public class App {
+
+import java.io.*;
+import java.net.*;
+
+class App {
+
     public static void main(String[] args) throws Exception {
-        System.out.println("Hello, World!");
+
+        String sentence;
+        String modifiedSentence;
+        BufferedReader inFromUser = new BufferedReader(new InputStreamReader(System.in));
+
     }
 }
