@@ -7,7 +7,11 @@ import java.net.Socket;
 
 public class Servidor {
 
-    // Integrantes: Manuel Mejicano Ortiz, Edgar Duarte Alemán, Eddie Rojas Palacios, Marcos Ortega Fernandez
+    // Integrantes: 
+    //Manuel Mejicano Ortiz, 
+    //Edgar Duarte Alemán, 
+    //Eddie Rojas Palacios,
+    // Marcos Ortega Fernandez
 
     public static void main(String[] args) throws IOException {
 
