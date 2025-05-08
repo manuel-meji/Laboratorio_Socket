@@ -13,4 +13,8 @@ public class Servidor {
 
 
 
+<<<<<<< HEAD
+=======
+}
+>>>>>>> dd6c5cff7c9e47f804611a62facb33c9930ad0f1
 }
