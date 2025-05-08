@@ -3,7 +3,7 @@ public class Servidor {
        
 
 
-
+        double base,altura,resultado;
 
 
 
