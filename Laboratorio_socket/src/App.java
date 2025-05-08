@@ -13,8 +13,6 @@ class App {
     // Conectarse al servidor en el puerto 6789
     Socket clientSocket = new Socket("localhost", 6789); // Cambiar "localhost" por IP del servidor si es remoto
 
- // Conectarse al servidor en el puerto 6789
- Socket clientSocket = new Socket("localhost", 6789); // Cambiar "localhost" por IP del servidor si es remoto
 
  // Flujos para enviar y recibir datos
  DataOutputStream outToServer = new DataOutputStream(clientSocket.getOutputStream());
