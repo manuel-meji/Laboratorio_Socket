@@ -26,7 +26,8 @@ class TCPClient {
         String altura = inFromUser.readLine();
 
         // Enviar ambas medidas al servidor separadas por coma
-        outToServer.writeBytes(base + "," + altura + '\n');
+        outToServer.writeBytes(base + "\n");
+        outToServer.writeBytes(altura + "\n");
 
         // Esperar la respuesta del servidor
         String respuesta = inFromServer.readLine();
