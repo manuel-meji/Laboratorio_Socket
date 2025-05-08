@@ -10,6 +10,9 @@ class App {
         String modifiedSentence;
         BufferedReader inFromUser = new BufferedReader(new InputStreamReader(System.in));
 
+    // Conectarse al servidor en el puerto 6789
+    Socket clientSocket = new Socket("localhost", 6789); // Cambiar "localhost" por IP del servidor si es remoto
+
  // Conectarse al servidor en el puerto 6789
  Socket clientSocket = new Socket("localhost", 6789); // Cambiar "localhost" por IP del servidor si es remoto
 
