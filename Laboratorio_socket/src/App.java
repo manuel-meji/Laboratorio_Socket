@@ -29,7 +29,7 @@ class TCPClient {
         outToServer.writeBytes(base + "," + altura + '\n');
 
         // Esperar la respuesta del servidor
-        String respuesta = inFromServer.readLine();
+        float respuesta = Float.parseFloat(inFromServer.readLine());
         System.out.println("Área calculada por el servidor: " + respuesta);
 
         // Cerrar conexión
