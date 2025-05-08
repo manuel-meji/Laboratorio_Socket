@@ -17,27 +17,20 @@ public class Servidor {
             Socket connectionSocket = welcomeSocket.accept();
             System.out.println("Cliente conectado");
 
-            BufferedReader inFromClient =
-                    new BufferedReader(new InputStreamReader(connectionSocket.getInputStream()));
+            BufferedReader inFromClient = new BufferedReader(new InputStreamReader(connectionSocket.getInputStream()));
 
-            DataOutputStream outToClient =
-                    new DataOutputStream(connectionSocket.getOutputStream());
+            DataOutputStream outToClient = new DataOutputStream(connectionSocket.getOutputStream());
 
-            // Leer la base enviada por el cliente
             String baseStr = inFromClient.readLine();
             base = Double.parseDouble(baseStr);
 
-            // Leer la altura enviada por el cliente
             String alturaStr = inFromClient.readLine();
             altura = Double.parseDouble(alturaStr);
 
-            // Calcular el área del rectángulo
             resultado = base * altura;
 
-            // Enviar el resultado al cliente
             outToClient.writeBytes("Área del rectángulo: " + resultado + "\n");
 
-            // Cerrar conexión con el cliente actual
             connectionSocket.close();
         }
     }
