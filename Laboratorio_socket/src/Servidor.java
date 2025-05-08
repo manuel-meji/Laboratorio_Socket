@@ -28,6 +28,7 @@ public class Servidor {
             DataOutputStream outToClient = new DataOutputStream(connectionSocket.getOutputStream());
 
             String baseStr = inFromClient.readLine();
+            System.out.println("Base recibida: " + baseStr);
             base = Double.parseDouble(baseStr);
 
             String alturaStr = inFromClient.readLine();
